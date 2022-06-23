@@ -3,7 +3,7 @@ import styles from './App.module.css'
 import data from './server/alarms.json'
 import { IAlarm } from './types/alarm.model'
 import clock from './assets/images/clock.png'
-import Alarm from './components/statelessComponents/Alarm'
+import Alarm from './components/statefullComponents/Alarm'
 import { Calendar } from 'primereact/calendar';
 
 

@@ -24,13 +24,13 @@
 }
 
 @keyframes rotateClock {
-  25%{
+  25% {
     transform: rotate(10deg);
   }
-  75%{
+  75% {
     transform: rotate(-10deg);
   }
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -41,6 +41,15 @@
   margin: 3em;
   background-color: rgb(0 0 0 / 22%);
   transition: transform 0.5s;
+  box-shadow: 0px 3px 30px -11px;
+}
+
+.confirm{
+  background-color: rgba(0, 128, 0, 0.753);
+}
+
+.skip {
+  opacity: 0.3;
 }
 
 .alarm:hover {
@@ -54,8 +63,8 @@
 }
 
 .calendar {
-  width: 48em !important;
-  margin: auto !important;
-  display: block !important;
   margin-top: 3em !important;
+  left: 50%;
+  width: 29em;
+  transform: translateX(-50%);
 }
