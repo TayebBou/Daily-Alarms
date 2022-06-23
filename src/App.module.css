@@ -7,6 +7,7 @@
   background-position: 48% 54%;
   background-size: cover;
   opacity: 0.5;
+  padding: 1em;
 }
 
 .h1 {
@@ -67,4 +68,25 @@
   left: 50%;
   width: 29em;
   transform: translateX(-50%);
+}
+
+@media (max-width: 750px) {
+
+  .calendar {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  .alarm-infos {
+    margin: 1em;
+  }
+
+  .clock-icon {
+    width: 5em;
+    height: 5em;
+    margin: 3em;
+    display: block;
+    margin: 1em auto 0em auto;
+  }
+  
 }
