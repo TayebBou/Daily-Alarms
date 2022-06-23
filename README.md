@@ -1,6 +1,6 @@
-# Star Wars Films
+# Daily Alarms
 
-Star wars films is a web app to consult star wars films.
+Daily Alarms is a web react app that allows you to view a series of alarms and their related information in a daily view that you can page through by day
 
 ## Available Scripts
 
