@@ -20,6 +20,19 @@
   width: 5em;
   margin: auto;
   display: block;
+  animation: rotateClock 1.5s linear infinite;
+}
+
+@keyframes rotateClock {
+  25%{
+    transform: rotate(10deg);
+  }
+  75%{
+    transform: rotate(-10deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
 }
 
 .alarm {
@@ -27,10 +40,22 @@
   flex-wrap: wrap;
   margin: 3em;
   background-color: rgb(0 0 0 / 22%);
+  transition: transform 0.5s;
+}
+
+.alarm:hover {
+  transform: scale(1.03);
 }
 
 .clock-icon {
   width: 5em;
   height: 5em;
   margin: 3em;
+}
+
+.calendar {
+  width: 48em !important;
+  margin: auto !important;
+  display: block !important;
+  margin-top: 3em !important;
 }
