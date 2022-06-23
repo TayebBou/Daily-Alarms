@@ -15,7 +15,7 @@ const Alarm: FC<{ alarm: IAlarm }> = ({ alarm }) => {
       } ${status === Status.SKIP ? styles.skip : null}`}
     >
       <img src={clockIcon} alt="clock icon" className={styles['clock-icon']} />
-      <div>
+      <div className={styles["alarm-infos"]}>
         <h1>
           {new Date(parseInt(alarm.alarm_time) * 1000)
             .toISOString()
@@ -29,7 +29,7 @@ const Alarm: FC<{ alarm: IAlarm }> = ({ alarm }) => {
         <Button
           disabled={status !== Status.ACTIVE}
           style={
-            status !== Status.ACTIVE ? { display: 'none' } : { margin: '1em' }
+            status !== Status.ACTIVE ? { display: 'none' } : { margin: '1em 1em 1em 2em' }
           }
           label="Confirm"
           icon="pi pi-check"
