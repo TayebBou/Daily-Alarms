@@ -9,7 +9,7 @@ import { Calendar } from 'primereact/calendar';
 
 const App: FC = () => {
   const [date, setDate] = useState<Date | Date[] | undefined>(undefined);
-  const [alarms, setAlarms] = useState<IAlarm[]>(data);
+  const [alarms, setAlarms] = useState<IAlarm[]>([]);
 
   useEffect(() => {
     const dateChoosed = date?.toLocaleString().split(',')[0];
